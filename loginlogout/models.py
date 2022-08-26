@@ -9,5 +9,5 @@ class User(models.Model):
     token = models.CharField(max_length=500, null=True, default="")
 
     def __str__(self):
-        return "{} -{}".format(self.username, self.email)
+        return f"{self.username} -{self.email}"
 
